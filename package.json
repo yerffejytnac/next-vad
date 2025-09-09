@@ -1,0 +1,40 @@
+{
+  "name": "app",
+  "version": "0.0.1",
+  "author": "Jeffrey Canty <jeffrey@tremendous.dev>",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "check": "biome check --write ./",
+    "nuke": "rm -rf ./node_modules && rm -rf .next",
+    "postinstall": "./build.sh"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.2.3",
+    "@ricky0123/vad-react": "^0.0.33",
+    "@svgr/webpack": "^8.1.0",
+    "motion": "^12.23.12",
+    "next": "^15.5.2",
+    "onnxruntime-web": "^1.22.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "styled-breakpoints": "^14.1.5",
+    "styled-components": "^6.1.19",
+    "styled-system": "^5.1.5",
+    "zustand": "^5.0.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/styled-system": "^5.1.23",
+    "typescript": "^5"
+  },
+  "trustedDependencies": [
+    "protobufjs",
+    "sharp"
+  ]
+}
