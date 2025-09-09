@@ -17,15 +17,18 @@ const styles = css`
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-color: #f6efe8;
   }
 
   body {
     min-height: 100vh;
     min-height: -webkit-fill-available;
-    background-color: ${theme.colors.neutral[95]};
     color: ${theme.colors.neutral[10]};
     font-family: ${theme.fonts.body};
-    font-weight: ${theme.fontWeights.medium};
+    font-weight: ${theme.fontWeights.light};
+    font-variation-settings: "wght" 350, "wdth" 500, "slnt" 0;
+    font-feature-settings: "ss05" 1;
     line-height: ${theme.lineHeights.body};
     margin-block-end: 0;
     margin-block-start: 0;
@@ -39,6 +42,7 @@ const styles = css`
   h6 {
     font-family: ${theme.fonts.heading};
     line-height: ${theme.lineHeights.heading};
+    font-variation-settings: "wght" 450,"wdth" 100,"slnt" 0;
     margin-block-end: 0;
     margin-block-start: 0;
   }
@@ -68,7 +72,7 @@ const styles = css`
   }
 
   p {
-    ${theme.textStyles.bodyMedium};
+    ${theme.textStyles.bodySmall};
     margin-block-end: 0;
     margin-block-start: 0;
   }
